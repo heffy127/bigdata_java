@@ -9,5 +9,9 @@ public class CalTest2 {
 		} else {
 			System.out.println("홀수입니다.");
 		}
+		
+		System.out.println("===삼항 연산자===");
+		System.out.println((num%2==0 ? "짝수입니다." : "홀수입니다."));
 	}
 }
+ 
