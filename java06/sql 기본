@@ -1,0 +1,15 @@
+SQL : DB를 다루기 위한 문법들의 모음
+
+-Data Definition Language(DDL): 데이터 정의 언어
+	create, alter, drop
+
+-Data Manipulation Language(DML) :	데이터 조작 언어
+	insert(Create)
+	select(Read)
+	update(Update)
+	delete(Delete)
+	
+	CRUD
+	
+-Data Control Language(DCL) : 데이터 제어 언어
+	create user
