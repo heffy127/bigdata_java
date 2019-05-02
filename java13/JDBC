@@ -1,0 +1,13 @@
+JDBC
+1. 드라이버 설정
+2. DB 연결 (db명, id, pw)
+3. SQL 결정
+4. SQL 전송
+-----------
+5. 검색결과가 있는 경우 처리
+
+	Java ------ Connector ------ DBMS
+				(Driver)
+				클래스들의 묶음
+				 -> archive(압축)
+				 java archive (jar)
