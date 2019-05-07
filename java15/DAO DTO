@@ -1,0 +1,10 @@
+DB처리위한  Class
+----------------
+DAO (Data Access Object)
+	-	CRUD 처리 구현
+
+DTO (Data Transfer Object)
+	-	전송할 데이터를 묶는 용도
+	
+yoonhyunwoo5135
+github 주소
