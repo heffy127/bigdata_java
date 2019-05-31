@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>회원가입 화면</title>
+	</head>
+	<body>
+		<img alt="" src="naver.PNG">
+		<form action="server.jsp"><!-- action에 입력할 값을 받아줄 곳 입력  -->
+			ID : <input type="text" name="id" placeholder="id는 5글자 이상"><br>
+							<!-- 중요 name의 이름으로 서버에서 구분 -->
+			PW : <input type="text" name="pw"><br>
+			NAME : <input type="text" name="name"><br>
+			TEL : <input type="text" name="tel"><br>
+			좋아하는 음식 : 
+			<select name="food">	<!-- 선택창 -->
+				<option value="jajang">짜장면</option>
+				<option value="ramen">라면</option>
+				<option value="burger">버거</option>
+				<option value="chicken">치킨</option>
+			</select><br>
+			성별 :
+			<!-- 여러 개 중 한 개만 선택 가능한 라디오 버튼--> 
+			남자 <input type="radio" name = "gender" value = "man">
+			여자 <input type="radio" name = "gender" value = "woman"><br>
+			취미 : 
+			달리기 <input type="checkbox" name = "hobby" value="run">
+			잠자기 <input type="checkbox" name = "hobby" value="sleep">
+			독서 <input type="checkbox" name = "hobby" value="read"><br>
+			하고 싶은 말 : <textarea rows="10" cols="20" placeholder="여기에 쓰세요."></textarea><br>
+			<input type="submit" value="전송"><!-- 서버로 전송되는 버튼 -->
+		</form>
+	</body>
+</html>
