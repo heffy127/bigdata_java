@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test5</title>
+<script type="text/javascript">
+		var adminId = "admin"
+		var adminPw = 1234
+		var userId = "user"
+		var userPw = 0000
+		
+	function go(){
+		id = document.querySelector("#id") 
+		pw = document.querySelector("#pw")
+		dataId = id.value
+	    dataPw = pw.value
+		if(dataId == adminId && dataPw == adminPw){
+			location.href = "manager.html"
+		} else if(dataId == userId && dataPw == userPw){
+			location.href = "user.html"
+		} else {
+			location.href = "jsTest3.html"
+		}
+	}
+	
+</script>
+</head>
+<body>
+	<h1>정보입력</h1>
+	<hr>
+	아이디 : <input type="text" name="id" id="id">
+	<br> 
+	비밀번호 : <input type="text" name="pw" id="pw">
+	<br>
+	<button onclick="go()">전송</button>
+</body>
+</html>

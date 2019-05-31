@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css3</title>
+		<style type="text/css">
+			/* 속성을 선택할때는 대괄호 사용 [] */
+			input[type = "text"]{
+				background: pink;
+			}
+			
+			input[type = "password"] {
+				background: lime;
+			}
+			
+			/* 마우스 올렸을때 색깔 바뀜 */
+			a:hover{
+				background: lime;
+				color: red;
+			}
+			
+			/* 링크를 다녀온 경우 */
+			a:visited {
+				background: silver;
+				color: blue;
+			}
+			
+			/* 박스 만듦 */
+			div {
+				background : yellow;
+				width: 195px;
+				height: 235px;
+			}
+			
+			div:hover {
+				width: 500px;
+				height: 50px;	
+				background: purple;
+				color: white;
+				/* 바뀌는 시간 조정 (동적으로 움직이는 것처럼 보임) */
+				transition: all 1s linear;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			글자를 많이 써야 예쁘다.<br>
+			글자를 많이 써야 예쁘다.<br>
+			글자를 많이 써야 예쁘다.<br>
+			글자를 많이 써야 예쁘다.<br>
+			글자를 많이 써야 예쁘다.	<br>	
+			글자를 많이 써야 예쁘다.	<br>	
+			글자를 많이 써야 예쁘다.	<br>	
+			글자를 많이 써야 예쁘다.	<br>	
+			글자를 많이 써야 예쁘다.	<br>	
+			글자를 많이 써야 예쁘다.	<br>	
+			글자를 많이 써야 예쁘다.	<br>	
+		</div>
+		전화번호 : <input type="text" name="tel"><br>
+		비밀번호 : <input type="password" name="pw"><br>
+		<hr align="left">
+		<a href="http://www.naver.com">네이버</a>
+		
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function call(total, count) { // 지불 금액 계산
+		var price = total/count
+		return price
+	}
+	
+	
+	function call2(rep) { // 최종 지불 금액 계산 
+		if(rep >= 3000)
+			alert("당신이 지불할 금액은 " + (rep-3000))
+	}
+	
+	function call3(){
+		total = parseInt(prompt("총 가격"))
+		count = parseInt(prompt("인원"))
+		price = call(total, count)
+		call2(price)
+	}
+	call3()
+	
+	
+</script>
+</head>
+<body>
+</body>
+</html>

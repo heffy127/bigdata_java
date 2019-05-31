@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+#total {
+	background-image: url(place.jpg);
+	width: 800px;
+	height: 1500px;
+	font-size: 20px;
+}
+
+#top {
+	width: 800px;
+	padding-left: 120px;
+	height: 70px;
+	background: pink;
+}
+
+#top2 {
+	width: 700px;
+	height: 70px;
+	top: 800px;
+	position: fixed;
+	padding-left: 120px;
+	background: #ffe7cc;
+}
+
+#top2 li {
+	list-style: none;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#top li {
+	list-style: none;
+	float: left;
+	width: 100px;
+	height: 50px;
+	padding-left: 25px;
+	padding-top: 20px;
+}
+
+#top li:nth-child(2n+1) {
+	background: #b3f9d4;
+	box-shadow: 5px 5px gray;
+}
+
+#top li:nth-child(2n) {
+	background: #ffedb5;
+	box-shadow: 5px 5px gray;
+}
+
+#top li:first-child {
+	border-radius: 20px 0 0 20px;
+}
+
+#top li:last-child {
+	border-radius: 0 20px 20px 0;
+}
+
+#title {
+	background: #d8ffe5;
+	margin: 20px;
+	border: 10px double #d580f2;
+	width: 350px;
+	height: 30px;
+	font-weight: bold;
+}
+
+#title:hover {
+	width: 350px;
+	height: 30px;
+	border: 10px double #5ca1c4;
+	background: purple;
+	color: white;
+	/* 바뀌는 시간 조정 (동적으로 움직이는 것처럼 보임) */
+	transition: all 1s linear;
+}
+
+#content {
+	padding-top: 10px;
+}
+
+table {
+	background: #ecbdef;
+}
+
+a {
+	color: #9f76f7;
+	font-weight: bold;
+}
+a:hover {
+	color: #fc6149;
+	font-weight: bold;
+	text-decoration: overline;
+}
+
+.t1 {
+	font-size: 40px; width : 300px;
+	height: 100px;
+	text-align: center;
+	width: 300px;
+}
+
+.t1:hover {
+	background: #ffffb2; 
+	font-size : 40px;
+	width: 300px;
+	height: 100px;
+	text-align: center;
+	font-size: 40px;
+}
+
+.t2 {
+	font-size: 40px;
+	width: 300px;
+	text-align: center;
+}
+
+.t2:hover {
+	background: #d1ff70; 
+	font-size : 40px;
+	width: 300px;
+	text-align: center;
+	font-size: 40px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test1</title>
+<script type="text/javascript">
+	function cal() {
+		id = document.querySelector("#name")
+		weight = document.querySelector("#weight")
+		height = document.querySelector("#height")
+		dataId = id.value
+		dataWeight = weight.value
+		dataHeight = height.value
+		
+		niceWeight = (dataHeight-100)*0.9
+		if(niceWeight-2 <= dataWeight && dataWeight <= niceWeight+2){
+			alert(dataId + "님의 몸무게는 적정 몸무게입니다.")
+		} else if(dataWeight <= niceWeight-2){
+			alert(dataId + "님은 저체중입니다.")
+		} else {
+			alert(dataId + "님은 비만입니다.")
+		}
+	}
+</script>
+</head>
+<body>
+	<h1>적정몸무게 계산</h1>
+	<hr>
+	이름 :
+	<input type="text" id="name">
+	<br> 몸무게 :
+	<input type="text" id="weight">
+	<br> 키 :
+	<input type="text" id="height">
+	<br>
+	<button onclick="cal()">적정몸무게</button>
+
+</body>
+</html>

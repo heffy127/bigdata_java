@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css</title>
+		<style type="text/css">
+			/* 1. tag로 적용 */
+			P {
+				color:#e04343; /* 구글에 color picker 검색 */
+				background: #76f2b4;
+				font: 궁서 10px bold;
+			}
+			
+			li {
+				color: #316184;
+			}
+			
+			/* 2. id로 적용 */
+			#li1{
+				background: #efa5e9;
+			}
+			
+			#li2{
+				background: #e8ed5a;
+			}
+			
+			/* 3. class로 적용 */
+			.p1 {
+				border: 2px dotted #3c705d;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<p class="p1">p태그는 문단 만드는 태그</p>	<!-- 문단 만드는 태그 -->
+		<ul>
+			<li id="li1">스타일 시트-1</li> <!-- css만을 위한 id -->
+			<li id="li2" class="p1">스타일 시트-2</li>
+		</ul>
+	</body>
+</html>

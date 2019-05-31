@@ -1,0 +1,124 @@
+@charset "UTF-8";
+#total{
+	color: blue;
+	background-image: url(sky2.jpeg);
+	width: 800px;
+	height: 1500px;
+	font-size: 20px; 
+}
+
+#top{
+	width: 800px;
+	padding-left: 120px;
+	height: 70px;
+	background: pink;
+}
+
+#top li{
+	list-style: none;
+	float: left;
+	width: 100px;
+	height: 50px;
+	padding-left: 25px;
+	padding-top: 20px;
+}
+
+#top li:nth-child(2n+1) {
+	background: #b3f9d4;
+	box-shadow: 5px 5px gray;
+}
+
+#top li:nth-child(2n) {
+	background: #ffedb5;
+	box-shadow: 5px 5px gray;
+}
+
+#top li:first-child {
+	border-radius: 20px 0 0 20px;
+}
+#top li:last-child {
+	border-radius: 0 20px 20px 0;
+}
+
+#top2 {
+	top: 50px;
+	right: 5px;
+	width: 200px;
+	height: 150px;
+	background: white;
+	position: fixed; /* 위치고정 */
+	font size: 10px;
+	font-weight: bold;
+	color: yellow;
+	border-top: 5px solid gold;
+	border-bottom: 5px double pink; 
+	border-radius: 75px 10px;
+	box-shadow: 5px 5px gray;
+}
+
+#content{
+	padding-top: 50px;
+	background: #fff587;
+	width: 800px;
+	height: 400px;
+}
+
+tr{
+	width: 300px;
+	
+}
+
+.t1{
+	width: 100px;
+}
+
+.t1:hover{
+	background: lime;
+	font-weight: bold;
+}
+
+.t2{
+	width: 200px;
+}
+
+.t3{
+	text-align: center;
+}
+
+input[type = text] {
+	background: skyblue;
+	font-size: 20px;
+	color: green;
+	font-weight: bold;
+}
+
+input[type = submit]{
+	color: white;
+	background: #d7c7db;
+	font-family: 굴림;
+	font-size: 30px;
+}
+
+input[type = submit]:hover{
+	color: gray;
+	background: pink;
+	font-family: 돋움;
+	font-size: 30px;
+}
+
+a {
+	text-decoration: none;
+	font-family: 굴림;
+	font-size: 18px;
+	color: #ad5940;	
+	font-size: bold;
+}
+
+a:hover {
+	text-decoration: overline;
+	font-family: 궁서;
+	font-size: 20px;
+	color: gray;
+	font-weight: bold;
+	
+}

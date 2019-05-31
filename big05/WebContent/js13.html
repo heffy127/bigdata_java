@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function check() {
+		data = document.getElementById("id") /* 'id'tag값 가져오기 */
+		data2 = data.value	/* 입력값 추출 */
+		if(data2.length >= 5){
+			//location.href="js.jsp?id="+data2 /* get방식으로 값 넘기기 */
+					alert(data2)
+		}else{
+			location.href="js13.html"
+			alert("5글자 이상 입력")
+		}
+	}
+</script>
+</head>
+<body>
+	<h1>회원가입</h1><br>
+	아이디 : <input type="text" name="id" id="id"><br>
+	<button onclick="check()">회원가입</button>
+</body>
+</html>

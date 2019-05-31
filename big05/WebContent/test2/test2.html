@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	today = new Date()
+	hour = today.getHours()
+	if(6 <= hour && hour < 12 ){
+		alert("지금 시각은 " + hour +"시, Good Morning 입니다.")
+	} else if(12 <= hour && hour < 18) {
+		alert("지금 시각은 " + hour +"시, Good Afternoon 입니다.")
+	} else if(18 <= hour && hour < 22) {
+		alert("지금 시각은 " + hour +"시, Good Evening 입니다.")
+	} else {
+		alert("지금 시각은 " + hour +"시, Good Night 입니다.")
+	}
+</script>
+</head>
+<body>
+	
+</body>
+</html>

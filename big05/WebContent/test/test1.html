@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test1</title>
+<script type="text/javascript">
+	function check() {
+		myname = document.querySelector("#name")
+		tel = document.querySelector("#tel")
+		dataName = myname.value
+		dataTel = tel.value
+		alert("이름은 " + dataName + " 전화번호는 " + dataTel)
+	}
+</script>
+</head>
+<body>
+	<h1>회원가입</h1>
+	<br> 이름 :
+	<input type="text" name="name" id="name">
+	<br> 전화번호 :
+	<input type="text" name="tel" id="tel">
+	<br>
+	<button onclick="check()">전송</button>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test2</title>
+<script type="text/javascript">
+	function go() {
+		content = document.getElementById("content")
+		myContent = content.value
+		location.href = "jsTest2.jsp?content="+myContent
+	}
+</script>
+</head>
+<body>
+	<h1>게시판</h1>
+	<hr align="left">
+	<input type="text" name="content" id="content">
+	<button onclick="go()">전송</button>
+</body>
+</html>
