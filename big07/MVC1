@@ -1,0 +1,7 @@
+모델 : 정형화된 방법
+
+MVC1 모델
+----------
+Model - 특별한 부분을 처리하는 담당(dao, dto)
+View - 보여지는 부분, template(HTML) 
+Control - 전체적인 요청에 대한 처리 호출, 응답하는 제어(JSP)	
