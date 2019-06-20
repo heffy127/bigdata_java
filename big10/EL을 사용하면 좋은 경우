@@ -1,0 +1,10 @@
+EL을 사용하면 좋은경우
+
+1. Parameter값 바로 출력
+2. dto값 출력
+3. session, application 속성 값 출력
+
+
+변수의 생존범위
+
+page --> request --> session --> application
