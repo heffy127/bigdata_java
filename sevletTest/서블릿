@@ -1,0 +1,12 @@
+servlet
+서블릿 : 
+ - 서버에서 돌아가는 작은 프로그램
+ - 웹프로그램을 하기 위한 라이브러리의 묶음
+ - HttpServletRequest
+   HttpServletResponse
+   PrintWriter
+   
+========
+스프링에서의 서블릿 설정 방법
+ - xml문서로 설정
+ - annotation 설정
