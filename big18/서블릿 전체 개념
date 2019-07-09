@@ -1,0 +1,90 @@
+
+1. tomcat이 웹앱에서 제일 먼저 읽는 설정 파일 이름은?
+
+ - web.xml
+
+ 
+
+2. context란?
+
+ - 어떤 객체를 핸들링 하기위한 접근 수단
+
+ - 서블릿을 수행하기 위해선 servlet context를 획득해야만 한다
+
+ 
+
+3. context path변경 방법은?
+
+ - Servers의 server.xml에서
+
+      프로젝트의 path를 변경해주면 됨
+
+
+
+4. 웹앱 설정 방법은 2가지는?
+
+ - 어노테이션(@) 또는 web.xml
+
+
+
+5. 서블릿의 생명 주기
+
+ - 1 Servlet 객체 생성
+
+ - 2 Init() 호출
+
+ - 3 service() -> doGet(), doPost() 호출 [요청시 매번]
+
+ - 4 destroy() 호출[자원 해제]
+
+
+
+6. 서블릿의 멤버 변수 초기화 방법
+
+ - <servlet>의 <init-param> 안에서
+
+   <param-name>에 변수명
+
+   <param-value>에 변수값 작성
+
+      이후 init 메소드에서 config.getInitParameter(변수명) 으로 값 불러옴
+
+   
+
+7. 서블릿을 get요청 했을 때 동작 방식
+
+ - service()를 거쳐 doGet()메소드를 호출
+
+ 
+
+8. JSP와 서블릿의 관계
+
+  서블릿
+
+ - java코드 안에 Html코드
+
+ - Servlet이 수정된 경우 java 코드를 컴파일(.class)생성 후 다시 재배포 해줘야 함
+
+
+
+ JSP
+
+ - HTML코드 안에 java코드
+
+ - JSP를 만들었을 경우 JSP컨테이너를 통해 내부적으로 java파일인 서블릿으로 변환
+
+ - JSP가 수정된 경우 WAS가 알아서 처리해주기 때문에 쉬운 배포 가능
+
+
+
+9. 클라이언트의 요청 방식 2가치, 차이점
+
+   get방식 : 요청시 http의 header 부분에 속해서 전송 (url에 값 표시)
+
+   post 방식 : 요청시 http의 body 부분에 속해서 전송 (url에 값 표시되지 않음)
+
+
+
+10. 서블릿 생성 후, 설정하는 것 2가지
+
+ - servlet 경로와 mapping 될 url 설정
